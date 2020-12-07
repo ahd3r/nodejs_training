@@ -1,0 +1,24 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "node training",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "process": "node process.js",
+    "fs-stream": "node file.js",
+    "stream": "node stream.js",
+    "crypto": "node crypto.js",
+    "server": "node http-server.js",
+    "event": "node event.js"
+  },
+  "author": "Ander",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.3.5",
+    "tedious": "^9.2.1"
+  }
+}
