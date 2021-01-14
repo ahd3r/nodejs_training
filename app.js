@@ -1,3 +1,4 @@
+// run in bash
 // docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=ADMIN1!1!1!1root' -p 1433:1433 -d mcr.microsoft.com/mssql/server
 // CREATE DATABASE training_db;
 
@@ -20,6 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
+  console.error(err);
   res.status(400).send({ error: err });
 });
 

@@ -6,6 +6,12 @@ childProcess.on('message', (msg) => {
   console.log(msg);
 });
 
-setTimeout(() => {
-  console.log('First process ends itself');
-}, 1500);
+// ----------------------------------------------------------------------------
+
+// const { fork } = require('child_process');
+
+// const childProcess = fork('./process2.js');
+
+// setTimeout(() => {
+//   console.log('First process ends itself');
+// }, 1500);

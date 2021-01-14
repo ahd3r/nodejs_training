@@ -7,7 +7,6 @@ const sequelize = new Sequelize({
   port: '1433', // docker
   username: 'sa', // docker
   password: 'ADMIN1!1!1!1root', // docker
-  models: [`${__dirname}/models`], // for migration
   pool: {
     min: 0,
     max: 5,

@@ -14,7 +14,7 @@ routes.post('/', checkToken, async (req, res, next) => {
     const userRes = await db.transaction(async (t) => {
       const { name, age, gender, compNum } = req.body;
       await User.create(
-        { name, age, gender, computer: { number: compNum, type: 'develop' } },
+        { name, age, gender, Computer: { number: compNum, type: 'develop' } },
         { transaction: t, include: [Computer] }
       );
       return await User.findOne({
