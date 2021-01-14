@@ -17,6 +17,6 @@ const User = db.define('Users', {
   }
 });
 
-Computer.hasOne(User, { onDelete: 'CASCADE', foreignKey: { allowNull: false } });
+User.hasOne(Computer, { onDelete: 'CASCADE', foreignKey: { allowNull: false } });
 
 module.exports = { User };
